@@ -34,57 +34,7 @@ with both sequence-level and structural evidence.
 ---
 
 ## Pipeline
-DRAMP 4.0 (24,076 sequences)
-
-│
-
-▼
-
-Length + canonical AA filter
-
-90% identity clustering (Python CD-HIT)
-
-│
-
-▼
-
-12,435 curated AMPs
-
-│
-
-▼
-
-16 physicochemical features
-
-(charge, hydrophobic moment, Chou-Fasman, Boman index ...)
-
-│
-
-▼
-
-Gradient boosting classifier  ──► ROC-AUC 0.77
-
-SHAP feature importance       ──► length, fraction_helix, fraction_positive
-
-│
-
-▼
-
-Top 131 candidates (ab_proba ≥ 0.938, low-complexity filtered)
-
-│
-
-▼
-
-ColabFold (alphafold2_ptm, 3 recycles, single-sequence mode)
-
-│
-
-▼
-
-69 high-confidence structures
-
-47 very high confidence (pLDDT ≥ 90)
+![AMP-ColabFold pipeline](results/figures/pipeline.svg)
 ---
 
 ## Repository structure
