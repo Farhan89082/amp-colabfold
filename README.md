@@ -34,7 +34,7 @@ with both sequence-level and structural evidence.
 ---
 
 ## Pipeline
-![AMP-ColabFold pipeline](results/figures/pipeline.svg)
+![AMP-ColabFold pipeline](results/figures/pipeline.png)
 ---
 
 ## Repository structure
