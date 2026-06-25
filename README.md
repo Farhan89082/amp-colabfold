@@ -38,45 +38,36 @@ with both sequence-level and structural evidence.
 ---
 
 ## Repository structure
+
+```
 amp-colabfold/
-
-├── data/
-
-│   ├── raw/                        # DRAMP 4.0 download
-
-│   └── processed/                  # Curated FASTA, feature CSV, structure summary
-
-├── notebooks/
-
-│   ├── 01_data_curation.ipynb      # Download, filter, cluster
-
-│   ├── 02_structural_features.ipynb # Physicochemical feature engineering
-
-│   ├── 03_activity_modelling.ipynb  # Gradient boosting + SHAP
-
-│   └── 04_structure_analysis.ipynb  # pLDDT/PAE parsing and figures
-
-├── src/amp_colabfold/
-
-│   ├── curation.py                 # DRAMP fetching, CD-HIT clustering
-
-│   ├── features.py                 # Physicochemical feature computation
-
-│   ├── models.py                   # Classifier, SHAP analysis
-
-│   └── structure_utils.py          # PDB/JSON parsing, confidence classification
-
-├── results/
-
-│   ├── candidate_amps.csv          # Final 69 high-confidence candidates
-
-│   ├── model_performance.csv       # Classifier metrics
-
-│   ├── shap_importance.csv         # Feature importance table
-
-│   └── figures/                    # All publication-quality figures
-
-└── environment.yml
+│
+├── 📂 data/
+│   ├── 📂 raw/                         # DRAMP 4.0 download
+│   └── 📂 processed/                   # Curated FASTA, feature CSV, structure summary
+│
+├── 📂 notebooks/
+│   ├── 📓 01_data_curation.ipynb       # Download · filter · 90% identity clustering
+│   ├── 📓 02_structural_features.ipynb # 16 physicochemical features
+│   ├── 📓 03_activity_modelling.ipynb  # Gradient boosting + SHAP
+│   └── 📓 04_structure_analysis.ipynb  # pLDDT / PAE parsing + figures
+│
+├── 📂 src/amp_colabfold/
+│   ├── 🐍 curation.py                  # DRAMP fetch · CD-HIT clustering
+│   ├── 🐍 features.py                  # Physicochemical feature computation
+│   ├── 🐍 models.py                    # Classifier · SHAP analysis
+│   └── 🐍 structure_utils.py           # PDB / JSON parsing · confidence classification
+│
+├── 📂 results/
+│   ├── 📊 candidate_amps.csv           # Final 69 high-confidence candidates
+│   ├── 📊 model_performance.csv        # ROC-AUC · precision · recall
+│   ├── 📊 shap_importance.csv          # Feature importance ranking
+│   └── 📂 figures/                     # All publication-quality figures
+│
+├── 📄 .gitignore
+├── 📄 README.md
+└── 📄 environment.yml
+```
 ---
 
 ## Figures
