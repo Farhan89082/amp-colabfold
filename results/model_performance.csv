@@ -1,0 +1,2 @@
+model,roc_auc,avg_precision
+GradientBoosting_physicochemical,0.7678321504529652,0.68923031296966

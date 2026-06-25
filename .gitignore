@@ -1,0 +1,20 @@
+# Virtual environment
+.venv/
+
+# ColabFold raw output (large MSA files, env folders, tar.gz)
+structures/colabfold_output/
+!structures/colabfold_output/flat_files/
+structures/colabfold_output/flat_files/*.pdb
+structures/colabfold_output/flat_files/*.json
+
+# Jupyter checkpoints
+**/.ipynb_checkpoints/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# OS files
+.DS_Store
+Thumbs.db
